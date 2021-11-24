@@ -1,0 +1,5 @@
+# モジュールのダウンロードコマンド
+pip download -d module --only-binary=:all: --python-version 38 --python-version 39 --platform win_amd64 --abi none --abi abi3 --abi cp38 --abi cp39 -r requirements.txt
+
+# モジュールのインストールコマンド
+pip install --no-index --find-links=module -r requirements.txt

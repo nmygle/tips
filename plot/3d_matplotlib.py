@@ -1,7 +1,7 @@
 from mpl_toolkits.mplot3d import Axes3D
 
 def plot3d(data, title=None):
-    x, y, z = data
+    x, y, z = data[:,0], data[:,1], data[:,2]
     fig = plt.figure(figsize=plt.figaspect(1))
     ax = Axes3D(fig)
     ax.scatter3D(x, y, z, s=1)
